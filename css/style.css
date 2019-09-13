@@ -1,0 +1,79 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    background-color: #fff;
+    /* height: 35px; */
+    padding: 8px 0;
+    font-size: 13px;
+}
+
+.nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.navbar {
+    background-color: #1e1e1e;
+    background-size: cover;
+    height: 75px;
+}
+
+.nav-link {
+    font-size: 15px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.top-bar-left {
+    float: left;
+}
+
+.top-bar-right {
+    float: right;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    width: 200px;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+
+#homepagina {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    background-color: #1e1e1e;
+    height: 45px;
+}
+
+.footer p {
+    color: white;
+    font-size: 13.5px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
