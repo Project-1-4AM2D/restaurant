@@ -2,6 +2,7 @@
 ## Updates & bug fixes
 
 * Fundamenteel initialiseren
+* Menu en footer design
 
 ## Gemaakt met
 
