@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
 }
 
 .nav {
@@ -16,13 +17,13 @@ body {
 }
 
 .navbar {
-    background-color: #1e1e1e;
+    background-color: #2c2e2c;
     background-size: cover;
     height: 75px;
 }
 
 .nav-link {
-    font-size: 15px;
+    font-size: 17px;
     color: #fff;
     margin: 0 5px;
 }
@@ -30,6 +31,7 @@ body {
 .nav-link:hover {
     color: #fff;
 }
+
 
 .top-bar-left {
     float: left;
@@ -45,7 +47,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color: black;
+    background-color:#2c2e2c;
     color: white;
 }
 
@@ -61,7 +63,7 @@ body {
     bottom: 0;
     width: 100%;
     padding-top: 5px;
-    background-color: #1e1e1e;
+    background-color: #2c2e2c;
     height: 45px;
 }
 
@@ -77,3 +79,4 @@ body {
 .footer-right {
     float: right;
 }
+

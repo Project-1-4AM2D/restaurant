@@ -6,7 +6,7 @@
             <a href="#"><i class="fas fa-envelope"></i></a>
         </div>
         <div class="top-bar-right">
-            <a href="#"><i class="fa fa-user"></i> Aanmelden</a>
+            <a href="#"><i class="fa fa-user"></i>Inloggen | Aanmelden</a>
         </div>
     </div>
 </nav>
@@ -22,9 +22,16 @@
                     <div class="dropdown">
                         <a id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#">Menukaart <i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Heren</a>
+                            <a class="dropdown-item" href="ontbijt.php">Ontbijt</a>
                             <div class="breker"></div>
-                            <a class="dropdown-item" href="#">Dames</a>
+                            <a class="dropdown-item" href="lunch.php">Lunch</a>
+                            <div class="breker"></div>
+                            <a class="dropdown-item" href="diner.php">Diner</a>
+                            <div class="breker"></div>
+                            <a class="dropdown-item" href="desserts.php">Desserts</a>
+                            <div class="breker"></div>
+                            <a class="dropdown-item" href="dranken.php">Dranken</a>
+
                         </div>
                     </div>
                 </li>
