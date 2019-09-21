@@ -1,11 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
 }
+
+/* Menu */
 
 .nav {
     background-color: #fff;
-    /* height: 35px; */
     padding: 8px 0;
     font-size: 13px;
 }
@@ -32,7 +32,6 @@ body {
     color: #fff;
 }
 
-
 .top-bar-left {
     float: left;
 }
@@ -51,14 +50,10 @@ body {
     color: white;
 }
 
-#homepagina {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-}
+/* Footer */
 
 .footer {
-    
+
     left: 0;
     bottom: 0;
     width: 100%;
@@ -78,5 +73,47 @@ body {
 
 .footer-right {
     float: right;
+}
+
+/*Homepagina header*/
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
 }
 

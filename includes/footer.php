@@ -1,10 +1,10 @@
-<footer class="footer">
+<footer class="footer" style="position: fixed;">
     <div class="container">
         <div class="footer-left">
-            <p>&copy;2019 eWatchShop</p>
+            <p>&copy;2019 Aan tafel</p>
         </div>
         <div class="footer-right">
-            <p>Met <i class="fa fa-heart"></i> geschreven door Yassine</p>
+            <p>Voor al uw heerlijke <i class="fas fa-utensils"></i> gerechten</p>
         </div>
     </div>
 </footer>
