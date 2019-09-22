@@ -1,4 +1,4 @@
-<footer class="footer" style="position: fixed;">
+<footer class="footer">
     <div class="container">
         <div class="footer-left">
             <p>&copy;2019 Aan tafel</p>

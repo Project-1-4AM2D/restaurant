@@ -17,7 +17,7 @@
 
     <header>
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" loop="loop">
+        <video playsinline="playsinline" autoplay="autoplay" loop="loop" id="headerVideo">
             <source src="images/video.mp4" type="video/mp4">
         </video>
         <div class="container h-100">
@@ -25,15 +25,37 @@
                 <div class="w-100 text-white">
                     <h1 class="display-3">Aan Tafel</h1>
                     <p class="lead mb-5">Hier komt een slogan</p>
-                    <a href="#" class="btn btn-primary">Openingstijden</a>
+                    <a href="#openingstijden" class="btn btn-primary">Openingstijden</a>
                     <a href="#" class="btn btn-primary">Menukaart</a>
                     <a href="#" class="btn btn-primary">Reserveren</a>
                     <a href="#" class="btn btn-primary">Contact</a>
+                    <button id="pause" onclick="pauseVideo()" class="btn btn-warning">Pauzeer</button>
                 </div>
             </div>
         </div>
     </header>
 
+
+    <section id="openingstijden" class="my-5">
+        <div class="container">
+            <h1 class="text-center display-4">Openingstijden</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/open.jpg" class="img-thumbnail">
+                </div>
+                <div class="col-md-6">
+                    <div class="lead">
+                        <p>Maandag t/m vrijdag vanaf 09:00-24:00</p>
+                        <p>Zaterdag en zondag vanaf 10:00-24:00</p>
+                        <p>Ontbijt wordt geserveerd vanaf 09:00 tot 12:00</p>
+                        <p>Lunch wordt geserveerd vanaf 12:00 tot 14:00</p>
+                        <p>Diner wordt geserveerd vanaf 17:30 tot 24:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <?php
     require('includes/footer.php');
     ?>

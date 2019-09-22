@@ -53,7 +53,6 @@ body {
 /* Footer */
 
 .footer {
-
     left: 0;
     bottom: 0;
     width: 100%;
@@ -117,3 +116,7 @@ header .overlay {
     z-index: 1;
 }
 
+/*Homepagina openingstijden*/
+#openingstijden .lead p {
+    font-size: 17px;
+}
