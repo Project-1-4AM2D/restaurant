@@ -23,12 +23,7 @@
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                <img src="./images/logo2.png" width="" height=200 alt="logo">
-                    <a href="#openingstijden" class="btn btn-primary">Openingstijden</a>
-                    <a href="#" class="btn btn-primary">Menukaart</a>
-                    <a href="#" class="btn btn-primary">Reserveren</a>
-                    <a href="#" class="btn btn-primary">Contact</a>
-                    <button id="pause" onclick="pauseVideo()" class="btn btn-warning">Pauzeer</button>
+                <img src="./images/logo2.png" width="" height=230 alt="logo" onclick="pauseVideo()" id="pause">
                 </div>
             </div>
         </div>
@@ -55,6 +50,7 @@
             </div>
         </div>
     </section>
+    
     <?php
     require('includes/footer.php');
     ?>

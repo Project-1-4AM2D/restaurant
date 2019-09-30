@@ -8,6 +8,7 @@
         <div class="top-bar-right">
             <a data-toggle="modal" data-target="#aanmelden"><i class="fa fa-user"></i> Aanmelden</a>
             <a data-toggle="modal" data-target="#registreren"><i class="fa fa-sign-in-alt"></i> Registreren</a>
+            <a data-toggle="modal" data-target="#soliciteren"><i class="fas fa-blender-phone"></i></i> Soliciteren</a>
         </div>
     </div>
 </nav>
@@ -114,6 +115,48 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten</button>
                 <button type="button" class="btn btn-primary">Registreren</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Soliciteren modal-->
+<div class="modal fade" id="soliciteren" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vacaturen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label>Volledige naam</label>
+                        <input type="text" class="form-control" placeholder="Voer hier uw voornaam en achternaam in">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefoonnummer</label>
+                        <input type="number" class="form-control" placeholder="Voer hier uw telefoonnummer in">
+                    </div>
+                    <div class="form-group">
+                        <label>E-mailadres:</label>
+                        <input type="email" class="form-control" placeholder="Voer hier uw e-mailadres in">
+                    </div>
+                    <div class="form-group">
+                        <label>CV</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group">
+                        <label>Motivatie</label>
+                       <textarea class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten</button>
+                <button type="button" class="btn btn-primary">Inzenden</button>
             </div>
         </div>
     </div>

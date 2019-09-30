@@ -1,5 +1,6 @@
 var video = document.getElementById('headerVideo');
 var btn = document.getElementById('pause');
+var mybutton = document.getElementById("myBtn");
 
 function pauseVideo()
 {
