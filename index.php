@@ -23,8 +23,7 @@
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <h1 class="display-3">Aan Tafel</h1>
-                    <p class="lead mb-5">Hier komt een slogan</p>
+                <img src="./images/logo2.png" width="" height=200 alt="logo">
                     <a href="#openingstijden" class="btn btn-primary">Openingstijden</a>
                     <a href="#" class="btn btn-primary">Menukaart</a>
                     <a href="#" class="btn btn-primary">Reserveren</a>
