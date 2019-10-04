@@ -4433,3 +4433,9 @@
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+
+
+// if (jQuery('div.modal').length > 0)
+// {
+//   jQuery('#errorbericht').modal('show');
+// }
