@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="top-bar-right">
             <a data-toggle="modal" data-target="#aanmelden"><i class="fa fa-user"></i> Aanmelden</a>
             <a data-toggle="modal" data-target="#registreren"><i class="fa fa-sign-in-alt"></i> Registreren</a>
-            <a data-toggle="modal" data-target="#soliciteren"><i class="fas fa-blender-phone"></i></i> Soliciteren</a>
+            <a data-toggle="modal" data-target="#solliciteren"><i class="fas fa-blender-phone"></i></i> Solliciteren</a>
         </div>
     </div>
 </nav>
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <a class="nav-link" href="reserveren.php">Reserveren</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Online bestellen</a>
+                    <a class="nav-link" href="bestellen.php">Online bestellen</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php#contact">Contact</a>
@@ -135,8 +135,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<!--Soliciteren modal-->
-<div class="modal fade" id="soliciteren" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!--Solliciteren modal-->
+<div class="modal fade" id="solliciteren" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">

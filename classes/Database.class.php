@@ -1,85 +1,28 @@
 <?php
 
-
 class Database
 {
-    private $hostname = 'localhost';
-    private $username = 'root';
-    private $password = '';
-    private $dbname = 'restaurant';
+    private static $servernaam = "mysql:host=localhost;dbname=restaurant";
+    private static $gebruiker = "root";
+    private static $wachtwoord = "2hg9tg9u";
 
-    private $dbh;
-    private $error;
+    private static $verbinding;
 
-    private $stmt;
+    private static $opties  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
 
-    public function __construct()
+    public static function openVerbinding()
     {
-        $dsn = 'mysql:host=' . $this->hostname . ';dbname=' . $this->dbname;
-
-        $options = array(
-            PDO::ATTR_PERSISTENT => true,
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        );
-
         try {
-            $this->dbh = new PDO($dsn, $this->username, $this->password, $options);
+            self::$verbinding = new PDO(self::$servernaam, self::$gebruiker, self::$wachtwoord, self::$opties);
+            return self::$verbinding;
         } catch (PDOException $e) {
-            $this->error = $e->getMessage();
+            echo "Er is een probleem met de mysql verbinding: " . $e->getMessage();
         }
     }
 
-    public function query($query)
+
+    public static function sluitVerbinding()
     {
-        $this->stmt = $this->dbh->prepare($query);
-    }
-
-    public function bind($param, $value, $type = null)
-    {
-        if (is_null($type)) {
-            switch (true) {
-                case is_int($value);
-                    $type = PDO::PARAM_INT;
-                    break;
-
-                case is_bool($value);
-                    $type = PDO::PARAM_BOOL;
-                    break;
-
-                case is_null($value);
-                    $type = PDO::PARAM_NULL;
-                    break;
-
-                default:
-                    $type = PDO::PARAM_STR;
-            }
-        }
-        $this->stmt->bindValue($param, $value, $type);
-    }
-
-    public function execute()
-    {
-        return $this->stmt->execute();
-    }
-
-    public function setResult()
-    {
-        $this->execute();
-        return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-    public function rowCount()
-    {
-        return $this->stmt->rowCount();
-    }
-
-    public function lastInsertId()
-    {
-        return $this->stmt->lastInsertId();
-    }
-
-    public function debug()
-    {
-        return $this->stmt->debugDumpParams();
+        self::$verbinding = null;
     }
 }
