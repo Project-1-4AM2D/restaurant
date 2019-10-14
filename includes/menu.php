@@ -39,13 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="dropdown">
                         <a id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#">Menukaart <i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="index.php#menukaart">Ontbijt</a>
+                            <a class="dropdown-item" href="menukaart.php#ontbijt">Ontbijt</a>
                             <div class="breker"></div>
-                            <a class="dropdown-item" href="index.php#menukaart">Lunch</a>
+                            <a class="dropdown-item" href="menukaart.php#lunch">Lunch</a>
                             <div class="breker"></div>
-                            <a class="dropdown-item" href="index.php#menukaart">Diner</a>
+                            <a class="dropdown-item" href="menukaart.php#diner">Diner</a>
                             <div class="breker"></div>
-                            <a class="dropdown-item" href="index.php#menukaart">Dranken</a>
+                            <a class="dropdown-item" href="menukaart.php#dranken">Dranken</a>
                         </div>
                     </div>
                 </li>

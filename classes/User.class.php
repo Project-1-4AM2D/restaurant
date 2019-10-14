@@ -7,7 +7,7 @@ class User
      * @param array $credentials
      */
 
-    public static function validateUser(Array $credentials)
+    public static function validateUser(array $credentials): void
     {
         $msg = new \Plasticbrain\FlashMessages\FlashMessages();
         if (preg_match('/^[a-zA-Z ]*$/',$credentials['volledigenaam'])) {
@@ -39,7 +39,7 @@ class User
      * @param String $password
      */
 
-    public static function createUser(String $fullname, Int $mobile, String $email, String $password)
+    public static function createUser(string $fullname, int $mobile, string $email, string $password): void
     {
         $msg = new \Plasticbrain\FlashMessages\FlashMessages();
         if (!empty($fullname) && !empty($mobile) && !empty($email) && !empty($password)) {

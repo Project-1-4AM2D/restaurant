@@ -364,3 +364,32 @@ header .overlay {
 .col-item .btn-details a:first-child {
     margin-right: 12px;
 }
+
+/* Maaltijden */
+.background-maaltijd {
+    background-image: url("../images/maaltijd.jpg");
+    color: #fff;
+}
+
+.background-maaltijd h1 {
+    font-size: 65px;
+    maring: 0;
+    padding: 0 0 10px;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
+.background-maaltijd p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.maaltijd {
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+
+.maaltijd .maaltijd-info {
+    padding-top: 5px;
+    padding-left: 20px;
+}

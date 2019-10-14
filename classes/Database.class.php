@@ -1,6 +1,6 @@
 <?php
 
-class Database
+class DatabaseTest
 {
     private static $servernaam = "mysql:host=localhost;dbname=restaurant";
     private static $gebruiker = "root";
