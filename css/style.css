@@ -124,47 +124,88 @@ header .overlay {
 
 /*Reserveren*/
 
-#reserveren {
-    margin: 30px 0 60px;
+.menukaart {
+    margin-top: 30px;
 }
 
-.background{
-    background-image: url("../images/reserveren.jpg");
-    background-size: cover;
-    height: 300px;
-    color: #fff;
+.mb-60 {
+    margin-bottom: 60px;
+}
+.section-title p {
+    font-size: 24px;
+    font-family: Oleo Script;
+    margin-bottom: 0px;
+}
+.section-title h4 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #FF5E18;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 25px;
+}
+.section-title h4::before {
+    width: 80px;
+    height: 1.5px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+}
+.section-title h4::before, .section-title h4::after {
+    position: absolute;
+    content: "";
+    background-color: #FF5E18;
+}
+#myTabContent {
+    margin-top: 50px;
+}
+.menu_tab {
+    width: auto;
+    margin: 0 auto;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
 }
 
-.background h1 {
-    font-size: 65px;
-    maring: 0;
-    padding: 0 0 10px;
-    word-wrap: break-word;
-    font-weight: 400;
+.menu_tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: white;
+    background-color: #4274d7;
+    border-color: #4d5bbe;
+}
+.single_menu_list {
+    position: relative;
+    padding-left: 190px;
+    margin-bottom: 110px;
 }
 
-.background p {
-    font-size: 18px;
-    font-weight: 400;
+.single_menu_list img {
+    max-width: 30%;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 50%;
+    transition: .4s
 }
 
-.boeken {
-    background-image: url("../images/reserved.jpg");
+.single_menu_list:hover img {
+    border-radius: 0;
+    transition: .4s
 }
 
-#eetgerechten .header {
-    background-color: #f2f2f2;
-    padding: 80px 0 77px;
+.single_menu_list h4 {
+    font-size: 20px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-#eetgerechten .header h4 {
-    font-size: 25px;
-    padding-bottom: 13px;
-    margin: 0;
-}
-
-#eetgerechten .header span {
-    font-size: 16px;
+.single_menu_list h4 span {
+    float: right;
+    font-weight: bold;
+    color: #4274d7;
+    font-style: italic;
 }
 
 /* Alerts */

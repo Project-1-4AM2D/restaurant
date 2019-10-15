@@ -37,11 +37,11 @@ require_once 'autoloader.php';
         <div class="container">
             <div class="text-center">
                 <h1 class="display-4">Openingstijden</h1>
-                <p class="lead mb-4">Een overzicht van onze openingstijden en feestdagen</p>
+                <p class="lead mb-4">Een overzicht van onze openingstijden</p>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/open.jpg" class="img-thumbnail">
+                    <img style="height: 400px; width: 100%;" src="images/openingstijden.png" class="img-thumbnail">
                 </div>
                     <div class="col-md-6">
                     <div class="lead">

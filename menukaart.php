@@ -23,344 +23,224 @@ require_once 'autoloader.php';
 <?php
 require('includes/menu.php');
 ?>
-<section id="ontbijt">
-    <div class="jumbotron background-maaltijd text-center">
-        <h1>Ontbijt</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
+<section class="menukaart">
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
+            <ul class="nav nav-tabs menu_tab" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active show" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab" aria-selected="false">Ontbijt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab" aria-selected="false">Lunch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="dinner-tab" data-toggle="tab" href="#dinner" role="tab" aria-selected="false">Diner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="dranken-tab" data-toggle="tab" href="#dranken" role="tab" aria-selected="false">Dranken</a>
+                </li>
+            </ul>
         </div>
         <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="lunch">
-    <div class="jumbotron background-maaltijd text-center">
-        <h1>Lunch</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
+            <div class="tab-content col-xl-12" id="myTabContent">
+                <div class="tab-pane fade active show" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Croissant met beleg  <span>&euro;3,00</span></h4>
+                                    <p>Heerlijke luxe croissantjes met keuze uit verschillend beleg zoals ambachtelijke jam, oud of jonge kaas, ham etc.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-6.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
+                <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="diner">
-    <div class="jumbotron background-maaltijd text-center" style="background-image: url('images/dinner.jpg')">
-        <h1>Diner</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
+                <div class="tab-pane fade " id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam gerecht</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="dranken">
-    <div class="jumbotron background-maaltijd text-center" style="background-image: url('images/drank.jpg');">
-        <h1>Dranken</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam drank</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam drank</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam drank</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam drank</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam drank</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="maaltijd">
-                    <div class="afbeelding">
-                        <img src="images/gerechttest.jpg">
-                    </div>
-                    <div class="maaltijd-info">
-                        <h5>Naam drank</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at beatae blanditiis cumque dolore.</p>
-                        <p>&euro;0,00</p>
+                <div class="tab-pane fade " id="dranken" role="tabpanel" aria-labelledby="dranken-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
+                                <div class="menu_content">
+                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
+                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

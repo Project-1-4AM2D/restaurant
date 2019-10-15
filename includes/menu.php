@@ -18,8 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="#"><i class="fas fa-envelope"></i></a>
         </div>
         <div class="top-bar-right">
-            <a data-toggle="modal" data-target="#aanmelden"><i class="fa fa-user"></i> Aanmelden</a>
-            <a data-toggle="modal" data-target="#registreren"><i class="fa fa-sign-in-alt"></i> Registreren</a>
             <a data-toggle="modal" data-target="#solliciteren"><i class="fas fa-blender-phone"></i></i> Solliciteren</a>
         </div>
     </div>
@@ -39,11 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="dropdown">
                         <a id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#">Menukaart <i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="menukaart.php#ontbijt">Ontbijt</a>
-                            <div class="breker"></div>
-                            <a class="dropdown-item" href="menukaart.php#lunch">Lunch</a>
-                            <div class="breker"></div>
-                            <a class="dropdown-item" href="menukaart.php#diner">Diner</a>
+                            <a class="dropdown-item" href="menukaart.php">Gerechten</a>
                             <div class="breker"></div>
                             <a class="dropdown-item" href="menukaart.php#dranken">Dranken</a>
                         </div>
@@ -63,84 +57,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </nav>
 
-<!--Aanmelden modal-->
-<div class="modal fade" id="aanmelden" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Aanmelden</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label>E-mailadres:</label>
-                        <input type="email" class="form-control" placeholder="Voer hier uw e-mailadres in">
-                    </div>
-                    <div class="form-group">
-                        <label>Wachtwoord:</label>
-                        <input type="password" class="form-control" placeholder="Voer hier uw wachtwoord in">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten</button>
-                <button type="button" class="btn btn-primary">Inloggen</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Registeren modal-->
-<div class="modal fade" id="registreren" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Registreren</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form method="POST">
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Volledige naam</label>
-                        <input type="text" name="volledigenaam" class="form-control" placeholder="Voer hier uw voornaam en achternaam in" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Telefoonnummer</label>
-                        <input type="number" name="telefoonnummer" class="form-control" placeholder="Voer hier uw telefoonnummer in" required>
-                    </div>
-                    <div class="form-group">
-                        <label>E-mailadres:</label>
-                        <input type="email" name="email" class="form-control" placeholder="Voer hier uw e-mailadres in" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Wachtwoord:</label>
-                        <input type="password" name="wachtwoord" class="form-control" placeholder="Voer hier uw wachtwoord in" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Bevestig Wachtwoord:</label>
-                        <input type="password" name="wachtwoord_bevestiging" class="form-control" placeholder="Voer hier nogmaals uw wachtwoord in" required>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten</button>
-                    <button type="submit" name="registreren" class="btn btn-primary">Registreren</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
 <!--Solliciteren modal-->
 <div class="modal fade" id="solliciteren" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vacaturen</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Vacatures</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -149,15 +71,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <form>
                     <div class="form-group">
                         <label>Volledige naam</label>
-                        <input type="text" class="form-control" placeholder="Voer hier uw voornaam en achternaam in" required>
+                        <input type="text" class="form-control" placeholder="Voer hier je voornaam en achternaam in" required>
                     </div>
                     <div class="form-group">
                         <label>Telefoonnummer</label>
-                        <input type="number" class="form-control" placeholder="Voer hier uw telefoonnummer in" required>
+                        <input type="number" class="form-control" placeholder="Voer hier je telefoonnummer in" required>
                     </div>
                     <div class="form-group">
                         <label>E-mailadres:</label>
-                        <input type="email" class="form-control" placeholder="Voer hier uw e-mailadres in" required>
+                        <input type="email" class="form-control" placeholder="Voer hier je e-mailadres in" required>
                     </div>
                     <div class="form-group">
                         <label>Openstaande functies</label>
