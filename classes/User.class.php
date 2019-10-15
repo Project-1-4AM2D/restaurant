@@ -9,7 +9,7 @@ class User
 
     public static function validateUser(array $credentials): void
     {
-        $msg = new \Plasticbrain\FlashMessages\FlashMessages();
+        // $msg = new \Plasticbrain\FlashMessages\FlashMessages();
         if (preg_match('/^[a-zA-Z ]*$/',$credentials['volledigenaam'])) {
             if (filter_var($credentials['email'], FILTER_VALIDATE_EMAIL) && Data::emailExist($credentials['email'])) {
                 if (is_int($credentials['telefoonnummer'])) {
@@ -41,7 +41,7 @@ class User
 
     public static function createUser(string $fullname, int $mobile, string $email, string $password): void
     {
-        $msg = new \Plasticbrain\FlashMessages\FlashMessages();
+        // $msg = new \Plasticbrain\FlashMessages\FlashMessages();
         if (!empty($fullname) && !empty($mobile) && !empty($email) && !empty($password)) {
             $stmt = Database::openVerbinding()->prepare('INSERT INTO users (email, password, name, mobile) VALUES (:email, :password, :name, :mobile)');
             $stmt->execute(array(
