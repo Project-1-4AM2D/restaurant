@@ -46,13 +46,14 @@ class Login
     {
         if (!isset($_SESSION['id'])) {
             $_SESSION['id'] = $this->validate->getId($this->email);
+            header('Location: overzicht.php');
         }
     }
 
     /**
      * Sessie id sluiten
      */
-    public function closeSession()
+    public static function closeSession()
     {
         if (isset($_SESSION['id'])) {
             unset($_SESSION['id']);

@@ -4,6 +4,7 @@ if (!Login::checkSession()) {
     header('Location: index.php');
     exit();
 }
+$personeel = new Personeel();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@ if (!Login::checkSession()) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aan Tafel - Overzicht</title>
+    <title>Aan Tafel - Personeel</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/button.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -22,6 +23,30 @@ if (!Login::checkSession()) {
 <?php
 require('includes/menu.php');
 ?>
+<div style="margin-top: 15px;" class="container-fluid">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Emailadres</th>
+            <th scope="col">Volledige naam</th>
+            <th scope="col">Aangenomen</th>
+            <th scope="col">Actie</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        foreach ($personeel->getAll() as $arbeider) {
+            echo '<tr>
+                    <th>' . $arbeider['email'] . '</th>
+                    <td>' . $personeel->getPersonal($arbeider['id'])['volledige_naam'] . '</td>
+                    <td>' . $arbeider['datum'] . '</td>
+                    <td><button type="button" class="btn btn-danger">Verwijderen</button><a href="bewerk_personeel.php?id='. $arbeider['id'] .'" class="btn btn-success">Bekijken</a></td>
+                </tr>';
+        }
+        ?>
+        </tbody>
+    </table>
+</div>
 
 <?php
 require('../includes/footer.php');

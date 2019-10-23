@@ -64,7 +64,7 @@ class Data
     }
 
     /**
-     * Haalt alle personeelsgegevens op van een specifiek gebruiker
+     * Haalt alle personeels cred op van een specifiek gebruiker
      * @param int $id
      * @return array
      */
@@ -73,7 +73,29 @@ class Data
         $this->db->insertUserValues('SELECT * FROM personeel WHERE id = :id');
         $this->db->bind(':id', $id);
 
-        $row = $this->db->SingleRow();
-        return $row;
+        return $row = $this->db->SingleRow();
+    }
+
+    /**
+     * @param int $id
+     * @return array
+     */
+    public function getPersonal(int $id): array
+    {
+        $this->db->insertUserValues('SELECT * FROM personeel_gegevens WHERE id = :id');
+        $this->db->bind(':id', $id);
+
+        return $row = $this->db->SingleRow();
+    }
+
+    /**
+     * Haalt alle personels op
+     * @return array
+     */
+    public function getAllPersonal(): array
+    {
+        $this->db->insertUserValues('SELECT * FROM personeel');
+
+        return $row = $this->db->All();
     }
 }
