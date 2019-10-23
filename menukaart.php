@@ -20,6 +20,12 @@
 <?php
 require('includes/menu.php');
 ?>
+
+<div class="jumbotron background text-center">
+    <h1>Menukaart</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>
+
 <section class="menukaart">
     <div class="container">
         <div class="row">
@@ -34,6 +40,9 @@ require('includes/menu.php');
                     <a class="nav-link " id="dinner-tab" data-toggle="tab" href="#dinner" role="tab" aria-selected="false">Diner</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link " id="nagerechten-tab" data-toggle="tab" href="#nagerechten" role="tab" aria-selected="false">Nagerechten</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" id="dranken-tab" data-toggle="tab" href="#dranken" role="tab" aria-selected="false">Dranken</a>
                 </li>
             </ul>
@@ -44,47 +53,41 @@ require('includes/menu.php');
                     <div class="row">
                         <div class="col-md-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Croissant met beleg  <span>&euro;3,00</span></h4>
-                                    <p>Heerlijke luxe croissantjes met keuze uit verschillend beleg zoals ambachtelijke jam, oud of jonge kaas, ham etc.</p>
+                                    <h4>CROISSANTJES MET BELEG  <span>&euro;5,00</span></h4>
+                                    <p> Ambachtelijke jam | Jong belegen kaas | gerookte ham | etc.</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>BROODJE BRIE  <span>&euro;10,50</span></h4>
+                                    <p> Walnoten-chrunch | honing</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>BROODJE GEZOND  <span>&euro;10,25</span></h4>
+                                    <p> Jong belegen kaas | gerookste achterham | tomaat | gekooktneitje | salade | Thousand Island dressing</p> 
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>FILET AMERICAIN  <span>&euro;10,25</span></h4>
+                                    <p> Augurk | rode ui | kaassnippers | pijnboompitten</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>GEROOKTE KIPFILET  <span>&euro;10,25</span></h4>
+                                    <p> Gebakken spek | sla | tomaat | mayonaise</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-6.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>CARPACCIO  <span>&euro;10,25</span></h4>
+                                    <p> Dungesneden ossenhaas | kappertjes | pijnboompitjes | Parmazaanse kaas | olijventapenade</p>
                                 </div>
                             </div>
                         </div>
@@ -94,47 +97,44 @@ require('includes/menu.php');
                     <div class="row">
                         <div class="col-md-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>GEGRILDE KIPSATÉ  <span>&euro;13,50</span></h4>
+                                    <p> Kippendijen | zoetzure komkommer | gebakken uitjes | seroendeng | kroepoek | licht pikante pindasaus | kousenband salade | friet</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>GEROOKTE ZALM  <span>&euro;9,50</span></h4>
+                                    <p>Biologische sub sandwich | limoen crème fraiche | zoetzure komkommer | rode ui | dillemayonaise</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>OMELET PICCANTE   <span>&euro;9,50</span></h4>
+                                    <p>Groene asperges | spinazie | paprika | chorizo | getoast wit landbrood</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-5.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>"Amsterdamse" BURGER  <span>&euro;14,50</span></h4>
+                                    <p>Truffelburger | meergranen bun | little gem | zoete uien compôte | bacon | “Utregse” Oude Gracht kaas | twister friet | geroosterde paprikasaus</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>GEITENKAASSALADE   <span>&euro;11,95</span></h4>
+                                    <p>Baby spinazie | pecannoten | avocado crème | gekarameliseerde appel | granola | cranberries | honing</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>UITSMIJTERS   <span>&euro;9,75</span></h4>
+                                    <p>
+                                    Gebakken beenham | honing-mosterdmayonaise<br>
+                                    Carpaccio | gelakt met truffelglace | rucola | mini tomaatjes | walnoten | Parmezaanse kaas | rode ui | truffelmayonaise
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -144,47 +144,85 @@ require('includes/menu.php');
                     <div class="row">
                         <div class="col-md-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>BLACK ANGUS TOURNEDOS   <span>&euro;26,50</span></h4>
+                                    <p> Gebakken paddenstoelen | bataatcrème | truffeljus | krokante cassave</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>GEGRILDE KIPSATÉ  <span>&euro;20,50</span></h4>
+                                    <p> Kippendijen | zoetzure komkommer | gebakken uitjes | seroendeng | kroepoek | licht pikante pindasaus | kousenband salade</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>MIXED GRILL  <span>&euro;22,50</span></h4>
+                                    <p> Kipsteak | lamspies | Iberico nek | sukade steak | gegrilde maiskolf | pepersaus | chimichurri</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>SCHNITZEL  <span>&euro;18,50</span></h4>
+                                    <p> Pata negra ham | tartaarsaus | limoen | gepofte tomaten</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>KABELJAUW  <span>&euro;22,50</span></h4>
+                                    <p> Whiskey-soja saus | fregola | pompoen gemarineerd in sinaasappel | komkommerschuim</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>100% VEGAN BURGER  <span>&euro;18,50</span></h4>
+                                    <p> Plantaardig “vlees” | zuurdesem bun | cheddar kaas | little gem | tomaten salsa | avocado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nagerechten" role="tabpanel" aria-labelledby="nagerechten-tab">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>SORBET  <span>&euro;7,50</span></h4>
+                                    <p> Lychee | passievrucht | aardbei | ijshoorn | slagroom | vruchtencoulis</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>WITTEVROUWEN  <span>&euro;8,50</span></h4>
+                                    <p> Chocolade-sinaasappel ganache | cacao spongecake | gezouten karamel | Oreo crumble | vanille-ijs</p>
+                                </div>
+                            </div>
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>CRÈME BRÛLÉE  <span>&euro;8,50</span></h4>
+                                    <p> Arabica koffie | Haagse hopjes ijs | Café mokka tuille | Oreo crumble</p> 
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>NEW YORK-STYLE CHEESECAKE  <span>&euro;8,50</span></h4>
+                                    <p> Mousse van framboos | cookie dough roomijs | mango gel | framboos kletskop</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>CHOCOLADE PANNA COTTA  <span>&euro;8,50</span></h4>
+                                    <p> Blondie cake | witte chocolade crème | yoghurtschots | ijs van Ruby cacao | rood fruit gel</p>
                                 </div>
                             </div>
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>KAASPLANKJE  <span>&euro;12,50</span></h4>
+                                    <p> 5 verschillende kazen: Rondin | Castilinhos | Utrechtse cigno | Beemster XO | Gorgonzola piccante | balsamico-noten crunch | gemberbrood</p>
                                 </div>
                             </div>
                         </div>
@@ -192,51 +230,85 @@ require('includes/menu.php');
                 </div>
                 <div class="tab-pane fade " id="dranken" role="tabpanel" aria-labelledby="dranken-tab">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                            <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-4.jpg" alt="">
-                                <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
-                                </div>
-                            </div>
-                            <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-1.jpg" alt="">
-                                <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>VERSE JUS D'ORANGE  <span>&euro;3,95</span></h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>APPELSAP  <span>&euro;2,95</span></h4>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-2.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>DRUIVENSAP  <span>&euro;2,90</span></h4>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-6">
                             <div class="single_menu_list">
-                                <img src="http://infinityflamesoft.com/html/restarunt-preview/assets/img/menu/menu-3.jpg" alt="">
                                 <div class="menu_content">
-                                    <h4>Chicken Fried Salad  <span>$45</span></h4>
-                                    <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis.</p>
+                                    <h4>FRISTI/CHOCOLADEMELK  <span>&euro;2,75</span></h4>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>DIVERSE FRISDRANKEN  <span>&euro;2,80</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>LATTE MACCHIATO  <span>&euro;3,90</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>CAPPUCCINO  <span>&euro;2,90</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>ESPRESSO  <span>&euro;2,85</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>VERSE MUNTTHEE  <span>&euro;3,85</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="single_menu_list">
+                                <div class="menu_content">
+                                    <h4>THEE  <span>&euro;2,75</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         </div>
                     </div>
                 </div>

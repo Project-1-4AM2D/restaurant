@@ -38,7 +38,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <img style="height: 400px; width: 100%;" src="images/openingstijden.png" class="img-thumbnail">
+                    <img style="height: 400px; width: 100%;" src="images/openingstijden.jpg" class="img-thumbnail">
                 </div>
                     <div class="col-md-6">
                     <div class="lead">

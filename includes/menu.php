@@ -1,15 +1,3 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['registreren'])) {
-        User::validateUser($_POST);
-    } else if (isset($_POST['aanmelden'])) {
-
-    }
-}
-?>
 <nav class="nav boven">
     <div class="container">
         <div class="top-bar-left">
@@ -34,14 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <a class="nav-link" href="index.php#openingstijden">Openingstijden</a>
                 </li>
                 <li class="nav-item">
-                    <div class="dropdown">
-                        <a id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link" href="#">Menukaart <i class="fa fa-caret-down"></i></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="menukaart.php">Gerechten</a>
-                            <div class="breker"></div>
-                            <a class="dropdown-item" href="menukaart.php#dranken">Dranken</a>
-                        </div>
-                    </div>
+                    <a class="nav-link" href="menukaart.php">Menukaart</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="reserveren.php">Reserveren</a>
@@ -104,14 +85,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 </div>
-<?php
-//if (isset($msg)) {
-//    echo '<div class="modal fade" id="errorbericht" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-//    <div class="modal-dialog" role="document">
-//        <div class="modal-content">
-//            <h3>'. $msg->display(null, false) .'</h3>
-//        </div>
-//    </div>
-//</div>';
-//}
-//?>

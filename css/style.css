@@ -28,10 +28,6 @@ body {
     margin: 0 5px;
 }
 
-.nav-link:hover {
-    color: #fff;
-}
-
 .top-bar-left {
     float: left;
 }
@@ -122,7 +118,7 @@ header .overlay {
     font-size: 17px;
 }
 
-/*Reserveren*/
+/*Menukaart*/
 
 .menukaart {
     margin-top: 30px;
@@ -133,7 +129,6 @@ header .overlay {
 }
 .section-title p {
     font-size: 24px;
-    font-family: Oleo Script;
     margin-bottom: 0px;
 }
 .section-title h4 {
@@ -174,7 +169,6 @@ header .overlay {
 }
 .single_menu_list {
     position: relative;
-    padding-left: 190px;
     margin-bottom: 110px;
 }
 
@@ -406,13 +400,19 @@ header .overlay {
     margin-right: 12px;
 }
 
-/* Maaltijden */
-.background-maaltijd {
-    background-image: url("../images/maaltijd.jpg");
+/** Reserveren **/
+#reserveren {
+    margin: 30px 0 60px;
+}
+
+.background{
+    background-image: url("../images/reserveren.jpg");
+    background-size: cover;
+    height: 300px;
     color: #fff;
 }
 
-.background-maaltijd h1 {
+.background h1 {
     font-size: 65px;
     maring: 0;
     padding: 0 0 10px;
@@ -420,17 +420,57 @@ header .overlay {
     font-weight: 400;
 }
 
-.background-maaltijd p {
+.background p {
     font-size: 18px;
     font-weight: 400;
 }
 
-.maaltijd {
-    display: inline-flex;
-    margin-bottom: 30px;
+.boeken {
+    background-image: url("../images/reserved.jpg");
 }
 
-.maaltijd .maaltijd-info {
-    padding-top: 5px;
-    padding-left: 20px;
+#eetgerechten .header {
+    background-color: #f2f2f2;
+    padding: 80px 0 77px;
+}
+
+#eetgerechten .header h4 {
+    font-size: 25px;
+    padding-bottom: 13px;
+    margin: 0;
+}
+
+#eetgerechten .header span {
+    font-size: 16px;
+}
+
+/* Alerts */
+.alert-labeled{
+    padding: 0px;
+}
+
+.alert-labeled-row{
+    display: table-row;
+    padding: 0px;
+}
+
+.alert-labelled-cell{
+    padding: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.alert-labeled .close > *{
+    padding:10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.alert-label{
+    vertical-align: middle;
+    background: #BCE8F1;
+    width: auto;
+    padding: 10px 15px;
+    height: 100%;
+    font-size:1.1em;
 }

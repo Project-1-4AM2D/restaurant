@@ -12,7 +12,7 @@
 
 ## Ontwikkelaars
 
-* **Lars Bongers** - *Frontend* - [E-mailadres](mailto:#)
-* **Lisa van Brenk** - *Backend* - [E-mailadres](mailto:#)
-* **Yassine El Fahmi** - *Backend* - [E-mailadres](mailto:info@yassinefahmi.nl)
+* **Lars Bongers** - [E-mailadres](mailto:#)
+* **Lisa van Brenk** - [E-mailadres](mailto:#)
+* **Yassine El Fahmi** - [E-mailadres](mailto:info@yassinefahmi.nl)
 
