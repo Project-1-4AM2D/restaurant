@@ -1,13 +1,10 @@
-<?php
-require_once 'autoloader.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aan Tafel - Mijn winkelwagen</title>
+    <title>Aan Tafel - Mijn winkelmand</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/button.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,7 +17,7 @@ require('includes/menu.php');
 ?>
 
 <div class="jumbotron background-winkelwagen text-center">
-    <h1>Winkelwagen</h1>
+    <h1>Winkelmand</h1>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 </div>
 

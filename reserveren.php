@@ -1,6 +1,3 @@
-<?php
-require_once 'autoloader.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +43,7 @@ require('includes/menu.php');
         </div>
         <div class="row">
             <div class="col-8">
-                <h1>Boek een tafel</h1>
+                <h1>Reserveer een tafel</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta dolorem earum enim excepturi expedita impedit inventore maxime, modi quaerat quasi quo tenetur unde. Illo molestias odit quaerat ratione similique?</p>
                 <form>
                     <div class="form-row">
@@ -82,9 +79,20 @@ require('includes/menu.php');
                                 <option>15:00 Beschikbaar</option>
                             </select>
                         </div>
+                        <div class="form-group col-4">
+                            <label>Voornaam:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-4">
+                            <label>Achternaam:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-4">
+                            <label>E-mailadres:</label>
+                            <input type="email" class="form-control">
+                        </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary">Boeken</button>
-                            <button type="button" class="btn btn-success">Bekijk menukaart</button>
+                            <button type="button" class="btn btn-primary">Reserveren</button>
                         </div>
                     </div>
                 </form>
@@ -99,15 +107,15 @@ require('includes/menu.php');
         <div class="container">
             <div class="row">
                 <div class="col-4">
+                    <h4>Ontbijt 09:30 - 12:00</h4>
+                    <span>Elke dag</span>
+                </div>
+                <div class="col-4">
                     <h4>Lunch 12:00 - 14:00</h4>
                     <span>Elke dag</span>
                 </div>
                 <div class="col-4">
                     <h4>Diner 17:30 - 24:00</h4>
-                    <span>Elke dag</span>
-                </div>
-                <div class="col-4">
-                    <h4>Lunch 00:00 - 00:00</h4>
                     <span>Elke dag</span>
                 </div>
             </div>
